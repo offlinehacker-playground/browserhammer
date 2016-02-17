@@ -1,0 +1,48 @@
+{
+  "capabilities":
+      [
+        {
+          "browserName": "firefox",
+          "version": 33,
+          "firefox_binary": "/home/offlinehacker/projects/browserhammer/result/bin/firefox-33.0",
+          "maxInstances": 1,
+          "platform": "LINUX",
+          "seleniumProtocol": "WebDriver"
+        },
+        {
+          "browserName": "opera",
+          "version": 12,
+          "opera_binary": "/home/offlinehacker/projects/browserhammer/result/bin/opera-12.00",
+          "maxInstances": 1,
+          "platform": "LINUX",
+          "seleniumProtocol": "WebDriver"
+        },
+        {
+          "browserName": "chrome",
+          "version": 40,
+          "platform": "LINUX",
+          "chrome_binary": "/home/offlinehacker/projects/browserhammer/result/bin/chromium-40.0.2194.2",
+          "maxInstances": 1, 
+          "seleniumProtocol": "WebDriver"
+        },
+        {
+          "browserName": "chrome",
+          "version": 39,
+          "platform": "LINUX",
+          "chrome_binary": "/home/offlinehacker/projects/browserhammer/result/bin/chromium-39.0.2133.0",
+          "maxInstances": 1, 
+          "seleniumProtocol": "WebDriver"
+        }
+      ],
+  "configuration":
+  {
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5,
+    "port": 5555,
+    "host": "127.0.0.1",
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "127.0.0.1"
+  }
+}
